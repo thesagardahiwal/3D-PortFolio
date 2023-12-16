@@ -48,6 +48,10 @@ function Contact() {
 
     }).catch((e)=>{
       showAlert({text: "I didn't recieve your message", type: "danger"})
+      setTimeout(()=>{
+        hideAlert();
+        setCurrentAnimation('idle');
+      }, [3000])
       console.log(e);
     })
   }
