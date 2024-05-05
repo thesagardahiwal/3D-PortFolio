@@ -27,7 +27,6 @@ function Home() {
      } else {
       screenScale = [1, 1, 1]
      }
-
      return [screenScale, screenPosition, rotation]
   }
 
